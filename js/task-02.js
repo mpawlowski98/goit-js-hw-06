@@ -1,8 +1,18 @@
+"use strict";
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
+
+const vegetablesItem = [];
+
+ingredients.forEach((ingredient) => {
+  const vegetables = document.createElement("li");
+  vegetables.textContent = ingredient;
+  vegetablesItem.push(vegetablesItem);
+});
+document.querySelector("#ingredients").append(...vegetablesItem);

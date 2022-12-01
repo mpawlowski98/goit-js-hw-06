@@ -1,6 +1,5 @@
 "use strict";
 
-// Homework
 const listOfLi = document.querySelectorAll("li.item");
 console.log(`${listOfLi.length}`);
 
