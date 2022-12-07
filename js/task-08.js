@@ -2,11 +2,11 @@
 
 const form = document.querySelector(".login-form");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   const input = {
-    email: event.currentTarget.elements["email"].value,
-    password: event.currentTarget.elements["password"].value,
+    email: e.currentTarget.elements["email"].value,
+    password: e.currentTarget.elements["password"].value,
   };
 
   if (input.email.length === 0 || input.password.length === 0) {
@@ -14,5 +14,5 @@ form.addEventListener("submit", (event) => {
     return;
   }
   console.log(input);
-  event.currentTarget.reset();
+  e.currentTarget.reset();
 });

@@ -7,7 +7,7 @@ function changeFont(ojb, size) {
 const input = document.querySelector("#font-size-control");
 input.value = 16;
 
-input.addEventListener("input", (event) => {
+input.addEventListener("input", (e) => {
   const target = document.querySelector("#text");
-  changeFont(target, event.currentTarget.value);
+  changeFont(target, e.currentTarget.value);
 });

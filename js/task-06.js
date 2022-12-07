@@ -2,9 +2,9 @@
 
 const input = document.querySelector("#validation-input");
 
-input.addEventListener("blur", (event) => {
-  const validLength = event.currentTarget.getAttribute("data-length");
-  const activeInput = event.currentTarget.value;
+input.addEventListener("blur", (e) => {
+  const validLength = e.currentTarget.getAttribute("data-length");
+  const activeInput = e.currentTarget.value;
 
   let toAdd;
   let toUnAdd;
@@ -17,8 +17,8 @@ input.addEventListener("blur", (event) => {
     toUnAdd = "valid";
   }
 
-  if (!event.currentTarget.classList.contains(toAdd))
-    event.currentTarget.classList.add(toAdd);
-  if (event.currentTarget.classList.contains(toUnAdd))
-    event.currentTarget.classList.remove(toUnAdd);
+  if (!e.currentTarget.classList.contains(toAdd))
+    e.currentTarget.classList.add(toAdd);
+  if (e.currentTarget.classList.contains(toUnAdd))
+    e.currentTarget.classList.remove(toUnAdd);
 });
