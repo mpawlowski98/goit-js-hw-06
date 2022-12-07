@@ -1,0 +1,13 @@
+"use scrict";
+
+function changeFont(ojb, size) {
+  ojb.style.fontSize = size + "px";
+}
+
+const input = document.querySelector("#font-size-control");
+input.value = 16;
+
+input.addEventListener("input", (event) => {
+  const target = document.querySelector("#text");
+  changeFont(target, event.currentTarget.value);
+});
