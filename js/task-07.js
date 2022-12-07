@@ -9,5 +9,5 @@ input.value = 16;
 
 input.addEventListener("input", (e) => {
   const target = document.querySelector("#text");
-  changeFont(target, e.currentTarget.value);
+  changeFont(target, e.target.value);
 });
