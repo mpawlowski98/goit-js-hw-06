@@ -13,6 +13,6 @@ const vegetablesItem = [];
 ingredients.forEach((ingredient) => {
   const vegetables = document.createElement("li");
   vegetables.textContent = ingredient;
-  vegetablesItem.push(vegetablesItem);
+  vegetablesItem.push(vegetables);
 });
 document.querySelector("#ingredients").append(...vegetablesItem);
