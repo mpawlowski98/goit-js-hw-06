@@ -24,3 +24,5 @@ document.querySelector(".gallery").append(
     return listItem;
   })
 );
+const gallery = document.querySelector(".gallery");
+gallery.style.display = "flex";
